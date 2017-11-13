@@ -228,6 +228,8 @@
 \setlength{\footnotesep}{2.2ex \@minus 2bp}
 %% \RequirePackage{everypage}
 %% \AddEverypageHook{\setcounter{footnote}{0}} 
+\makeatletter
+\@addtoreset{footnote}{page}
 
 
 %% \renewcommand{\thefootnote}{\textcircled{\arabic{footnote}}}
@@ -297,3 +299,8 @@
 %% \sethead{\sectiontitle}{}{\sc \thepage}
 %% \setfoot{}{}{}
 %% \headrule}
+
+\newtheorem{proof}{证明}[chapter]
+\newtheorem{assumption}{假设}[chapter]
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{lemma}{引理}[chapter]

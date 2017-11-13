@@ -1,0 +1,20 @@
+* TODO lists
+  - [X] 每章参考文献重新排序
+    在每章插入参考文献之前加入[fn:1]：
+    #+BEGIN_SRC tex
+    \setcounter{NAT@ctr}{0}
+    #+END_SRC
+  - [X] 每页脚注重新排序
+    在 .cls 文件中使用如下代码[fn:2]：
+    #+BEGIN_SRC tex
+    \makeatletter
+    \@addtoreset{footnote}{chapter}
+    #+END_SRC
+
+* Footnotes
+
+[fn:2] http://bbs.ctex.org/forum.php?mod=viewthread&tid=76845
+
+[fn:1] https://www.ezsmth.com/topic/TeX/302212
+
+
